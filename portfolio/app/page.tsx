@@ -23,10 +23,6 @@ function GitHubIcon(props: React.SVGProps<SVGSVGElement>) {
 
 export default function Home() {
   const [lang, setLang] = useState<Language>('fr')
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
-  const [sending, setSending] = useState(false)
   const [status, setStatus] = useState<
     | { type: 'idle' }
     | { type: 'success'; message: string }
@@ -43,27 +39,6 @@ export default function Home() {
   useEffect(() => {
     setStatus({ type: 'idle' })
   }, [lang])
-
-  useEffect(() => {
-    const site = siteRef.current
-    if (!site) return
-
-    const updateCursorPosition = (event: PointerEvent) => {
-      site.style.setProperty('--cursor-x', `${event.clientX}px`)
-      site.style.setProperty('--cursor-y', `${event.clientY}px`)
-    }
-
-    site.style.setProperty('--cursor-x', `${window.innerWidth / 2}px`)
-    site.style.setProperty('--cursor-y', `${window.innerHeight / 2}px`)
-
-    window.addEventListener('pointermove', updateCursorPosition, {
-      passive: true
-    })
-
-    return () => {
-      window.removeEventListener('pointermove', updateCursorPosition)
-    }
-  }, [])
 
   useEffect(() => {
     const section = timelineRef.current
@@ -92,58 +67,12 @@ export default function Home() {
     return () => observer.disconnect()
   }, [lang])
 
-  async function handleSubmit(e: React.FormEvent) {
-    e.preventDefault()
-    setStatus({ type: 'idle' })
-    if (!name.trim() || !email.trim() || !message.trim()) {
-      setStatus({ type: 'error', message: t.contact.validationError })
-      return
-    }
-    setSending(true)
-    try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: name.trim(),
-          email: email.trim(),
-          message: message.trim()
-        })
-      })
-      if (res.ok) {
-        setStatus({ type: 'success', message: t.contact.success })
-        setName('')
-        setEmail('')
-        setMessage('')
-      } else {
-        const json = await res.json().catch(() => null)
-        const errorMessage =
-          lang === 'en'
-            ? json?.error || t.contact.genericError
-            : t.contact.genericError
-        setStatus({
-          type: 'error',
-          message: errorMessage
-        })
-      }
-    } catch {
-      setStatus({ type: 'error', message: t.contact.networkError })
-    } finally {
-      setSending(false)
-    }
-  }
-
   const languageSwitchLabel =
     lang === 'en' ? 'Passer en français' : 'Switch to English'
   const socialLabels = {
     linkedin:
-      lang === 'fr'
-        ? 'Voir mon profil LinkedIn (nouvelle fenêtre)'
-        : 'View my LinkedIn profile (new window)',
-    github:
-      lang === 'fr'
-        ? 'Voir mon profil GitHub (nouvelle fenêtre)'
-        : 'View my GitHub profile (new window)'
+      lang === 'fr' ? 'Voir mon profil LinkedIn' : 'View my LinkedIn profile',
+    github: lang === 'fr' ? 'Voir mon profil GitHub' : 'View my GitHub profile'
   }
 
   return (
@@ -307,7 +236,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section id='contact' className='section'>
+          {/* <section id='contact' className='section'>
             <h2 id='contact-heading'>{t.contact.title}</h2>
             <p className='muted'>{t.contact.subtitle}</p>
 
@@ -351,7 +280,6 @@ export default function Home() {
                 />
               </div>
 
-              {/* Honeypot for bots */}
               <label className='sr-only' htmlFor='company'>
                 {t.contact.labels.company}
               </label>
@@ -380,7 +308,7 @@ export default function Home() {
                 )}
               </div>
             </form>
-          </section>
+          </section> */}
         </main>
 
         <footer className='footer'>
