@@ -94,36 +94,82 @@ export const translations: Record<Language, Copy> = {
         "A quick snapshot of recent roles, ownership and the tools I've leaned on.",
       items: [
         {
-          period: '2023 — Present',
-          role: 'Senior Frontend Engineer',
-          company: 'Freelance',
+          period: 'Mar 2023 — Present',
+          role: 'Full-Stack Web Developer',
+          company: 'Deepbloo',
           summary:
-            'Partnering with startups to ship accessible design systems and high-performing marketing sites.',
-          stack: ['Next.js', 'TypeScript', 'Design systems', 'Accessibility']
+            'Building a SaaS platform for tender analysis using AI to extract relevant business insights.',
+          stack: [
+            'AWS',
+            'Vue.js',
+            'TypeScript',
+            'Node.js',
+            'Python',
+            'PostgreSQL',
+            'ElasticSearch',
+            'GrapqhQL',
+            'AI',
+            'NLP'
+          ]
         },
         {
-          period: '2021 — 2023',
-          role: 'Lead UI Engineer',
-          company: 'Product Studio',
+          period: '2022 — 2023',
+          role: 'Freelance Full-Stack Web Developer',
+          company: 'Deepbloo',
           summary:
-            'Led a small team to build a component library that unified five product surfaces and reduced UI defects.',
-          stack: ['React', 'Storybook', 'Design ops', 'Team lead']
+            'Freelance mission to build a SaaS platform for tender analysis using AI to extract key business insights.',
+          stack: [
+            'AWS',
+            'Vue.js',
+            'TypeScript',
+            'Node.js',
+            'Python',
+            'PostgreSQL',
+            'ElasticSearch',
+            'GrapqhQL',
+            'AI',
+            'NLP'
+          ]
         },
         {
-          period: '2019 — 2021',
-          role: 'Full-stack Developer',
-          company: 'SaaS Startup',
+          period: 'oct 2022 — jun 2022',
+          role: 'Exchange Student',
+          company: 'California State University, Long Beach USA',
           summary:
-            'Shipped end-to-end features, improved onboarding flows and introduced observability to reduce downtime.',
-          stack: ['Node.js', 'GraphQL', 'Postgres', 'Product discovery']
+            'University exchange semester focused on Digital Marketing, Management, and Economics.',
+          stack: ['Marketing', 'Management', 'Economics', 'English']
         },
         {
-          period: '2016 — 2019',
-          role: 'UI/UX Engineer',
-          company: 'Agency',
+          period: '2018 — 2023',
+          role: 'EPITECH TECHNOLOGY',
+          company: 'Epitech Bordeaux',
           summary:
-            'Designed and built interactive marketing experiences for global brands with a focus on motion.',
-          stack: ['Animation', 'CSS architecture', 'Prototyping', 'Client work']
+            'Computer engineering curriculum centered on hands-on learning and team projects.',
+          stack: [
+            'C',
+            'C++',
+            'C#',
+            'Algorithms',
+            'React Native',
+            'Project management',
+            'DevOps'
+          ]
+        },
+        {
+          period: '2016 — 2018',
+          role: 'Medical Entrance Exam Prep (PACES)',
+          company: 'Faculty of Medicine, University of Bordeaux',
+          summary:
+            'Intensive study of foundational sciences to prepare for entry into second-year medical school.',
+          stack: [
+            'Medicine',
+            'Physics',
+            'Chemistry',
+            'Pharmacology',
+            'Microbiology',
+            'Mathematics',
+            'Epidemiology'
+          ]
         }
       ]
     },
@@ -202,36 +248,82 @@ export const translations: Record<Language, Copy> = {
         'Un aperçu rapide des rôles récents, des responsabilités et des outils utilisés.',
       items: [
         {
-          period: '2023 — Présent',
-          role: 'Ingénieur Frontend Senior',
-          company: 'Freelance',
+          period: 'Mars 2023 — Présent',
+          role: 'Développeur Full-Stack Web',
+          company: 'Deepbloo',
           summary:
-            'Partenariat avec des startups pour livrer des design systems accessibles et des sites marketing performants.',
-          stack: ['Next.js', 'TypeScript', 'Design systems', 'Accessibilité']
+            "Développement d'une plateforme SaaS d'analyse d'appels d'offres utilisant l'IA pour extraire des insights commerciaux pertinents.",
+          stack: [
+            'AWS',
+            'Vue.js',
+            'TypeScript',
+            'Node.js',
+            'Python',
+            'PostgreSQL',
+            'ElasticSearch',
+            'GrapqhQL',
+            'AI',
+            'NLP'
+          ]
         },
         {
-          period: '2021 — 2023',
-          role: 'Lead UI Engineer',
-          company: 'Product Studio',
+          period: '2022-2023',
+          role: 'Développeur Freelance Full-Stack Web',
+          company: 'Deepbloo',
           summary:
-            "Pilotage d'une petite équipe pour construire une bibliothèque de composants qui a unifié cinq surfaces produit et réduit les bugs UI.",
-          stack: ['React', 'Storybook', 'Design ops', "Lead d'équipe"]
+            "Mission freelance pour la création d'une plateforme SaaS d'analyse d'appels d'offres utilisant l'IA pour extraire des insights commerciaux pertinents.",
+          stack: [
+            'AWS',
+            'Vue.js',
+            'TypeScript',
+            'Node.js',
+            'Python',
+            'PostgreSQL',
+            'ElasticSearch',
+            'GrapqhQL',
+            'AI',
+            'NLP'
+          ]
         },
         {
-          period: '2019 — 2021',
-          role: 'Développeur full-stack',
-          company: 'SaaS Startup',
+          period: 'Oct 2021 — Juin 2022',
+          role: 'California State University, Long Beach USA',
+          company: 'Long Beach',
           summary:
-            "Livraison de features de bout en bout, amélioration de l'onboarding et mise en place d'observabilité pour réduire les pannes.",
-          stack: ['Node.js', 'GraphQL', 'Postgres', 'Discovery produit']
+            "Semestre d'échange universitaire axé sur le Marketing Digital, le Management et l'Economie.",
+          stack: ['Marketing', 'Management', 'Economie', 'Anglais']
         },
         {
-          period: '2016 — 2019',
-          role: 'Ingénieur UI/UX',
-          company: 'Agence',
+          period: '2018 — 2023',
+          role: 'EPITECH TECHNOLOGY',
+          company: 'Epitech Bordeaux',
           summary:
-            "Conception et réalisation d'expériences marketing interactives pour des marques globales avec un focus sur le motion.",
-          stack: ['Animation', 'Architecture CSS', 'Prototypage', 'Clientèle']
+            "Cursus d'ingénierie informatique axé sur la pratique et les projets en équipe.",
+          stack: [
+            'C',
+            'C++',
+            'C#',
+            'Algorithmie',
+            'React Native',
+            'Gestion de projets',
+            'DevOps'
+          ]
+        },
+        {
+          period: '2016 — 2018',
+          role: 'Préparation Concours PACES',
+          company: 'Faculté de Médecine de Bordeaux',
+          summary:
+            "Étude intensive des sciences fondamentales en vue du concours d'entrée en deuxième année de médecine.",
+          stack: [
+            'Médecine',
+            'Physique',
+            'Chimie',
+            'Pharmacologie',
+            'Microbiologie',
+            'Mathématiques',
+            'Epidemiologie'
+          ]
         }
       ]
     },
