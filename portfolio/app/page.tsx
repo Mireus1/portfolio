@@ -96,9 +96,6 @@ export default function Home() {
             <a href='#projects'>{t.nav.projects}</a>
             <a href='#about'>{t.nav.about}</a>
             <a href='#timeline'>{t.nav.timeline}</a>
-            <a className='primary' href='#contact'>
-              {t.nav.contact}
-            </a>
             <button
               className='lang-toggle'
               type='button'
